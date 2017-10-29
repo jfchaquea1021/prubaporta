@@ -104,10 +104,11 @@
             <script src="js/html5shiv.js"></script>
         <![endif]-->
     </head>   
-    
+    /*
     <body>
    	 <img style="width: 100%;" src="../images/messageSent.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.chaksdesign.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
      </body>
+     */
 </html>';
      
      
@@ -153,10 +154,11 @@
             <script src="js/html5shiv.js"></script>
         <![endif]-->
     </head>   
-    
+    /*
     <body>
    	 <img style="width: 100%;" src="../images/messageNot.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.chaksdesign.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
      </body>
+     */
 </html>';
    }
 
