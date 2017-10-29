@@ -1,5 +1,6 @@
 
 <?php 
+  
   if(isset($_POST['email'])){
 	  
 	$name =$_POST["name"];
@@ -8,8 +9,8 @@
 	$comment=$_POST["comment"];
 	
 	// Email Receiver Address
-	$receiver="info@yourdomain.com";
-	$subject="Contact form details";
+	$receiver="designchaks@gmail.com";
+	$subject="Contacto Chaks.com";
 
 	$message = "
 	<html>
@@ -45,20 +46,104 @@
 	</body>
 	</html>
 	";
-// Always set content-type when sending HTML email
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-// More headers
-$headers .= 'From: <'.$from.'>' . "\r\n";
+	
+	
+	/*
+	// Always set content-type when sending HTML email
+	$headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+	// More headers
+	$headers .= 'From: <'.$from.'>' . "\r\n";
+	*/
+
+	$headers= 'MIME-Version: 1.0' . "\r\n";
+	$headers.= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+
+
+   //if(mail($receiver,$subject,$message,$headers))  
    if(mail($receiver,$subject,$message,$headers))  
    {
 	   //Success Message
-      echo "The message has been sent!";
+   
+     
+     echo '<html class="no-js" lang="en">
+    <head>
+        <!-- title -->
+        <title>Juan Felipe Chaquea</title>
+        <!-- description -->
+        <meta name="description" content="A great collection of creative, responsive, elegant onepage templates for different industries.">
+        <!-- keywords -->
+        <meta name="keywords" content="creative, css3, html5, onepage, multipurpose, bootstrap, responsive, agency, architecture, resume, blog, photography, restaurant, portfolio, spa, travel, wedding, coming soon">
+        <meta charset="utf-8">
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <link rel="stylesheet" href="../css/animate.css" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <!-- et line icon --> 
+        <link rel="stylesheet" href="../css/et-line-icons.css" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="../css/owl.transitions.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="../css/magnific-popup.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <!--[if IE]>
+            <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+    </head>   
+    
+    <body>
+   	 <img style="width: 100%;" src="../images/messageSent.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.chaksdesign.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
+     </body>
+</html>';
+     
+     
+      
    }
    else
    {	
    	 //Fail Message
-      echo "The message could not been sent!";
+     echo '<html class="no-js" lang="en">
+    <head>
+        <!-- title -->
+        <title>Juan Felipe Chaquea</title>
+        <!-- description -->
+        <meta name="description" content="A great collection of creative, responsive, elegant onepage templates for different industries.">
+        <!-- keywords -->
+        <meta name="keywords" content="creative, css3, html5, onepage, multipurpose, bootstrap, responsive, agency, architecture, resume, blog, photography, restaurant, portfolio, spa, travel, wedding, coming soon">
+        <meta charset="utf-8">
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <link rel="stylesheet" href="../css/animate.css" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <!-- et line icon --> 
+        <link rel="stylesheet" href="../css/et-line-icons.css" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="../css/owl.transitions.css" />
+        <link rel="stylesheet" href="../css/owl.carousel.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="../css/magnific-popup.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <!--[if IE]>
+            <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+    </head>   
+    
+    <body>
+   	 <img style="width: 100%;" src="../images/messageNot.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.chaksdesign.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
+     </body>
+</html>';
    }
 
 }
