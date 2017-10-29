@@ -10,7 +10,7 @@
 	
 	// Email Receiver Address
 	$receiver="jfchaquea1021@gmail.com";
-	$subject="Contacto CaroSilva.com";
+	$subject="Contacto chaks.com";
 
 	$message = "
 	<html>
@@ -106,7 +106,7 @@
     </head>   
     
     <body>
-   	 <img style="width: 100%;" src="../images/messageSent.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.carosilva.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
+   	 <img style="width: 100%;" src="../images/messageSent.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.chaksdesign.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
      </body>
 </html>';
      
@@ -155,7 +155,7 @@
     </head>   
     
     <body>
-   	 <img style="width: 100%;" src="../images/messageNot.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.carosilva.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
+   	 <img style="width: 100%;" src="../images/messageNot.jpg" alt="Correo enviado" /> <button onclick="location.href =\'http://www.chaksdesign.com\'" style=" position: absolute;bottom: 5%; left: 8%;" id="volver" class="highlight-button-dark btn btn-medium fadeInLeft animated">Go Back</button>
      </body>
 </html>';
    }
